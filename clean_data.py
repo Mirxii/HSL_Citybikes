@@ -38,7 +38,7 @@ stations_df.drop(columns=['FID', 'Operaattor'], inplace=True)
 
 
 # Rename columns so everything is in english
-stations_df.columns = ['id', 'name_fi' , 'name_sv', 'name_en', 'address_fi', 'address_sv', 
+stations_df.columns = ['station_id', 'name_fi' , 'name_sv', 'name_en', 'address_fi', 'address_sv', 
                        'city_fi', 'city_sv', 'capacity', 'long', 'lat']
 
 # All stations that aren't in Espoo are in Helsinki, fill the blanks with Helsinki
