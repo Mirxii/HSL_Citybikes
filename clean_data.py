@@ -24,6 +24,9 @@ july_df.drop(july_df[july_df['Covered distance (m)'] < 10].index, inplace=True)
 # Make a single dataframe containing all journeys
 journeys_df = pd.concat([may_df, june_df, july_df])
 
+# Remove duplicate rows
+journeys_df.drop_duplicates(inplace=True)
+
 # Refactor column names, replace spaces with underscores
 journeys_df.columns = ['departure_time', 'return_time', 'departure_station_id', 'departure_station_name',
                        'return_station_id', 'return_station_name', 'covered_distance', 'duration']
