@@ -47,6 +47,6 @@ stations_df['city_sv'].replace(' ', 'Helsingfors', inplace=True)
 
 
 ## Write dataframes to files in database folder
-journeys_df.to_csv('./db/journey_data.csv', index=False)
-
-stations_df.to_csv('./db/station_data.csv', index=False)
+journeys_df.to_csv('./db/journey_data.csv', sep=';', index=False)
+# Some of the station names contain ',' so we use ';' as a separator
+stations_df.to_csv('./db/station_data.csv', sep=';', index=False)
