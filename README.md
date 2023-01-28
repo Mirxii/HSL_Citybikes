@@ -10,6 +10,7 @@ App for viewing past trips made with Helsinki's city bikes.
 
 ### Dependencies
 
+- Docker Desktop
 - Python and Pandas
   - For preprocessing the data, might be better to be do with something else to drop the dependencies
 - TBD
@@ -28,4 +29,12 @@ App for viewing past trips made with Helsinki's city bikes.
 
 ### Database
 
--
+- Run `docker compose up -d` in the root folder to start the MariaDB database.
+- Database reads the files created in Importing the data step automatically.
+
+- You can visit the database with adminer tool by going to <http://localhost:8080/> and entering following information.
+  - System: `MySQL`
+  - Server: `database`
+  - Username: `root`
+  - Password: `123456`
+  - Database: `citybikes`
