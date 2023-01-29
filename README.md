@@ -29,12 +29,13 @@ App for viewing past trips made with Helsinki's city bikes.
 
 ### Database
 
+- Make sure your Docker Desktop is running
 - Run `docker compose up -d` in the root folder to start the MariaDB database.
 - Database reads the files created in Importing the data step automatically.
 
 - You can visit the database with adminer tool by going to <http://localhost:8080/> and entering following information.
   - System: `MySQL`
   - Server: `database`
-  - Username: `root`
-  - Password: `123456`
+  - Username: `biker`
+  - Password: `biker`
   - Database: `citybikes`
