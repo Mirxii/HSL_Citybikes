@@ -1,6 +1,8 @@
 # HSL_Citybikes
 
-My take on the pre-assignment for this year's Solita dev academy.
+> __Disclaimer! This project is very much a WIP.__
+
+Project based on this year's Solita dev academy pre-assigment. [It can be found here.](https://github.com/solita/dev-academy-2023-exercise)
 
 ## Description
 
